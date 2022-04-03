@@ -1,0 +1,362 @@
+[
+  {
+    "origin": "CGN",
+    "destination": "BER",
+    "departureDate": "2023-05-22",
+    "returnDate": "2022-12-07",
+    "seatAvailability": 23,
+    "price": {
+      "amount": 237,
+      "currency": "EUR"
+    },
+    "uuid": "6249cfb911a4bfe80e717109"
+  },
+  {
+    "origin": "CGN",
+    "destination": "BER",
+    "departureDate": "2022-09-19",
+    "returnDate": "2022-09-26",
+    "seatAvailability": 77,
+    "price": {
+      "amount": 211,
+      "currency": "EUR"
+    },
+    "uuid": "6249cfb9a7b80d87fde86555"
+  },
+  {
+    "origin": "CGN",
+    "destination": "BER",
+    "departureDate": "2022-08-11",
+    "returnDate": "2023-01-05",
+    "seatAvailability": 54,
+    "price": {
+      "amount": 161,
+      "currency": "EUR"
+    },
+    "uuid": "6249cfb95999809b73fbba5d"
+  },
+  {
+    "origin": "BER",
+    "destination": "MUC",
+    "departureDate": "2022-11-27",
+    "returnDate": "2023-03-05",
+    "seatAvailability": 54,
+    "price": {
+      "amount": 218,
+      "currency": "EUR"
+    },
+    "uuid": "6249d02714cdda5dc80d4e14"
+  },
+  {
+    "origin": "BER",
+    "destination": "MUC",
+    "departureDate": "2022-12-23",
+    "returnDate": "2023-01-04",
+    "seatAvailability": 47,
+    "price": {
+      "amount": 150,
+      "currency": "EUR"
+    },
+    "uuid": "6249d027418886127e9ec52d"
+  },
+  {
+    "origin": "FRA",
+    "destination": "CGN",
+    "departureDate": "2023-05-07",
+    "returnDate": "2022-09-16",
+    "seatAvailability": 54,
+    "price": {
+      "amount": 221,
+      "currency": "EUR"
+    },
+    "uuid": "6249d08ac0ff540058027695"
+  },
+  {
+    "origin": "FRA",
+    "destination": "CGN",
+    "departureDate": "2022-08-20",
+    "returnDate": "2023-01-03",
+    "seatAvailability": 68,
+    "price": {
+      "amount": 125,
+      "currency": "EUR"
+    },
+    "uuid": "6249d08ab86dd2d2a26b3117"
+  },
+  {
+    "origin": "FRA",
+    "destination": "CGN",
+    "departureDate": "2022-09-20",
+    "returnDate": "2022-11-24",
+    "seatAvailability": 56,
+    "price": {
+      "amount": 130,
+      "currency": "EUR"
+    },
+    "uuid": "6249d08a46e9213f07f91298"
+  },
+  {
+    "origin": "FRA",
+    "destination": "CGN",
+    "departureDate": "2022-09-12",
+    "returnDate": "2023-03-13",
+    "seatAvailability": 48,
+    "price": {
+      "amount": 100,
+      "currency": "EUR"
+    },
+    "uuid": "6249d08adae0c45cfda717e5"
+  },
+  {
+    "origin": "BER",
+    "destination": "CGN",
+    "departureDate": "2022-12-08",
+    "returnDate": "2023-03-24",
+    "seatAvailability": 96,
+    "price": {
+      "amount": 247,
+      "currency": "EUR"
+    },
+    "uuid": "6249d0fde8852de2d567f000"
+  },
+  {
+    "origin": "BER",
+    "destination": "CGN",
+    "departureDate": "2023-03-21",
+    "returnDate": "2022-10-04",
+    "seatAvailability": 53,
+    "price": {
+      "amount": 218,
+      "currency": "EUR"
+    },
+    "uuid": "6249d0fd62e377b6a919eaaf"
+  },
+  {
+    "origin": "HAM",
+    "destination": "CGN",
+    "departureDate": "2023-02-15",
+    "returnDate": "2023-05-13",
+    "seatAvailability": 73,
+    "price": {
+      "amount": 206,
+      "currency": "EUR"
+    },
+    "uuid": "6249d11a1cd6c3d64ae44714"
+  },
+  {
+    "origin": "HAM",
+    "destination": "CGN",
+    "departureDate": "2022-08-25",
+    "returnDate": "2023-03-12",
+    "seatAvailability": 52,
+    "price": {
+      "amount": 176,
+      "currency": "EUR"
+    },
+    "uuid": "6249d11a10a9e69c908f0e9a"
+  },
+  {
+    "origin": "HAM",
+    "destination": "CGN",
+    "departureDate": "2022-12-07",
+    "returnDate": "2022-08-18",
+    "seatAvailability": 54,
+    "price": {
+      "amount": 208,
+      "currency": "EUR"
+    },
+    "uuid": "6249d11a29cbbe952d53dc63"
+  },
+  {
+    "origin": "MUC",
+    "destination": "CGN",
+    "departureDate": "2022-11-04",
+    "returnDate": "2022-07-21",
+    "seatAvailability": 65,
+    "price": {
+      "amount": 177,
+      "currency": "EUR"
+    },
+    "uuid": "6249d13afcb5c46d8c09280d"
+  },
+  {
+    "origin": "MUC",
+    "destination": "CGN",
+    "departureDate": "2022-08-29",
+    "returnDate": "2023-03-21",
+    "seatAvailability": 14,
+    "price": {
+      "amount": 225,
+      "currency": "EUR"
+    },
+    "uuid": "6249d13acefef62845fd5a6b"
+  },
+  {
+    "origin": "CGN",
+    "destination": "MUC",
+    "departureDate": "2022-11-23",
+    "returnDate": "2023-05-25",
+    "seatAvailability": 54,
+    "price": {
+      "amount": 213,
+      "currency": "EUR"
+    },
+    "uuid": "6249e260683aa0d21a99f215"
+  },
+  {
+    "origin": "CGN",
+    "destination": "MUC",
+    "departureDate": "2023-04-20",
+    "returnDate": "2023-04-08",
+    "seatAvailability": 76,
+    "price": {
+      "amount": 179,
+      "currency": "EUR"
+    },
+    "uuid": "6249e260d5bb8f15f3d51510"
+  },
+  {
+    "origin": "CGN",
+    "destination": "MUC",
+    "departureDate": "2022-12-01",
+    "returnDate": "2022-08-26",
+    "seatAvailability": 102,
+    "price": {
+      "amount": 177,
+      "currency": "EUR"
+    },
+    "uuid": "6249e260542c221e1bee5b3f"
+  },
+  {
+    "origin": "CGN",
+    "destination": "BER",
+    "departureDate": "2023-01-24",
+    "returnDate": "2023-04-13",
+    "seatAvailability": 39,
+    "price": {
+      "amount": 191,
+      "currency": "EUR"
+    },
+    "uuid": "6249e272cb7dec0208476ce3"
+  },
+  {
+    "origin": "CGN",
+    "destination": "BER",
+    "departureDate": "2023-03-16",
+    "returnDate": "2022-10-21",
+    "seatAvailability": 82,
+    "price": {
+      "amount": 213,
+      "currency": "EUR"
+    },
+    "uuid": "6249e2728c866562a2da4cf4"
+  },
+  {
+    "origin": "CGN",
+    "destination": "BER",
+    "departureDate": "2023-04-25",
+    "returnDate": "2022-07-18",
+    "seatAvailability": 22,
+    "price": {
+      "amount": 124,
+      "currency": "EUR"
+    },
+    "uuid": "6249e272216b45bf51e77acd"
+  },
+  {
+    "origin": "CGN",
+    "destination": "HAM",
+    "departureDate": "2022-07-17",
+    "returnDate": "2023-05-11",
+    "seatAvailability": 83,
+    "price": {
+      "amount": 175,
+      "currency": "EUR"
+    },
+    "uuid": "6249e283ebfb1cdfd16dac35"
+  },
+  {
+    "origin": "CGN",
+    "destination": "HAM",
+    "departureDate": "2023-06-02",
+    "returnDate": "2022-10-14",
+    "seatAvailability": 85,
+    "price": {
+      "amount": 227,
+      "currency": "EUR"
+    },
+    "uuid": "6249e283e3b67e598c8dc2ad"
+  },
+  {
+    "origin": "CGN",
+    "destination": "HAM",
+    "departureDate": "2023-02-05",
+    "returnDate": "2023-04-03",
+    "seatAvailability": 28,
+    "price": {
+      "amount": 196,
+      "currency": "EUR"
+    },
+    "uuid": "6249e283f6a916b3f50e75ae"
+  },
+  {
+    "origin": "CGN",
+    "destination": "FRA",
+    "departureDate": "2023-06-01",
+    "returnDate": "2022-08-15",
+    "seatAvailability": 99,
+    "price": {
+      "amount": 189,
+      "currency": "EUR"
+    },
+    "uuid": "6249e2b9293ccbf7b8568942"
+  },
+  {
+    "origin": "CGN",
+    "destination": "FRA",
+    "departureDate": "2022-10-19",
+    "returnDate": "2023-01-09",
+    "seatAvailability": 23,
+    "price": {
+      "amount": 186,
+      "currency": "EUR"
+    },
+    "uuid": "6249e2b9967e270b97e75e36"
+  },
+  {
+    "origin": "FRA",
+    "destination": "MUC",
+    "departureDate": "2023-05-05",
+    "returnDate": "2022-06-14",
+    "seatAvailability": 47,
+    "price": {
+      "amount": 194,
+      "currency": "EUR"
+    },
+    "uuid": "6249e2de089f762c5e3b7c5a"
+  },
+  {
+    "origin": "FRA",
+    "destination": "HAM",
+    "departureDate": "2022-11-18",
+    "returnDate": "2022-08-06",
+    "seatAvailability": 83,
+    "price": {
+      "amount": 161,
+      "currency": "EUR"
+    },
+    "uuid": "6249e2fd4035c0ec37a307ed"
+  },
+  {
+    "origin": "FRA",
+    "destination": "HAM",
+    "departureDate": "2022-07-12",
+    "returnDate": "2023-03-15",
+    "seatAvailability": 44,
+    "price": {
+      "amount": 167,
+      "currency": "EUR"
+    },
+    "uuid": "6249e2fdc0438c31119efe30"
+  }
+]
