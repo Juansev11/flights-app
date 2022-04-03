@@ -50,6 +50,6 @@ export const CardTitle = styled(Text)`
 `;
 
 export const CardDescription = styled(Text)`
-  color: ${(props) => props.theme.palette.common.grey};
+  color: ${(props) => props.theme.palette.common.grey[400]};
   line-height: 1rem;
 `;

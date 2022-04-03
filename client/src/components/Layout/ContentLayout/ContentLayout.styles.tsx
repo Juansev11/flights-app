@@ -8,6 +8,6 @@ export const ContentLayoutContainer = styled.div`
   margin: 0 auto;
   gap: 2rem;
   @media only screen and (min-width: 30rem) {
-    max-width: 24rem;
+    max-width: 64rem;
   }
 `;

@@ -15,6 +15,7 @@ const textWeights: TextWeights = {
   light: 300,
   normal: 400,
   bold: 700,
+  extraBold: 800,
 };
 
 export const StyledText = styled.p<TextProps>`

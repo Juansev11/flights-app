@@ -3,8 +3,14 @@ import '@emotion/react';
 type ColorPalette = {
   main: string;
 };
+type ColorRange = {
+  100: string;
+  200: string;
+  300: string;
+  400: string;
+};
 
-type TextWeightVariants = 'light' | 'normal' | 'bold';
+type TextWeightVariants = 'light' | 'normal' | 'bold' | 'extraBold';
 type TextFontVariants = 'xs' | 'sm' | 'base' | 'md' | 'lg' | 'xl' | 'xxl';
 
 declare module '@emotion/react' {
@@ -13,9 +19,10 @@ declare module '@emotion/react' {
       common: {
         black: string;
         white: string;
-        grey: string;
+        grey: ColorRange;
       };
       primary: ColorPalette;
+      background: ColorPalette;
     };
     typography: {
       fontSizes: {

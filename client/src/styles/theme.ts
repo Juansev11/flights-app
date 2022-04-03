@@ -2,16 +2,23 @@ import { Theme } from '@emotion/react';
 
 const white = '#fff';
 const black = '#4A4A4A';
-const grey = '#9B9B9B';
 
 const palette = {
   common: {
     black,
     white,
-    grey,
+    grey: {
+      100: '#EAEAEA',
+      200: '#C9C5C5',
+      300: '#888',
+      400: '#666',
+    },
   },
   primary: {
-    main: '#b197ff',
+    main: '#891b55',
+  },
+  background: {
+    main: 'linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%)',
   },
 };
 

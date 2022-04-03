@@ -26,6 +26,6 @@ export const Input = styled.input`
 `;
 
 export const InputLabel = styled.label`
-  color: ${(props) => props.theme.palette.common.grey};
+  color: ${(props) => props.theme.palette.common.grey[400]};
   font-size: 0.875rem;
 `;
