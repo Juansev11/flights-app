@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useReducer, useRef } from "react";
+import { useCallback, useEffect, useReducer, useRef } from 'react';
 
-import { API_URL } from "@/config";
+import { API_URL } from '@/config';
 
 interface FetchResponse<T> {
   data?: T[];
@@ -10,14 +10,11 @@ interface FetchResponse<T> {
 }
 
 type Action<T> =
-  | { type: "loading" }
-  | { type: "fetched"; payload: T[] }
-  | { type: "error"; payload: Error };
+  | { type: 'loading' }
+  | { type: 'fetched'; payload: T[] }
+  | { type: 'error'; payload: Error };
 
-function useFetch<T = unknown>(
-  url = "",
-  options?: RequestInit
-): FetchResponse<T> {
+function useFetch<T = unknown>(url = '', options?: RequestInit): FetchResponse<T> {
   const cancelRequest = useRef<boolean>(false);
 
   const initialState: FetchResponse<T> = {
@@ -32,11 +29,11 @@ function useFetch<T = unknown>(
     action: Action<T>
   ): FetchResponse<T> => {
     switch (action.type) {
-      case "loading":
+      case 'loading':
         return { ...state, isLoading: true };
-      case "fetched":
+      case 'fetched':
         return { ...state, data: action.payload, isLoading: false };
-      case "error":
+      case 'error':
         return { ...state, error: action.payload, isLoading: false };
       default:
         return state;
@@ -46,7 +43,7 @@ function useFetch<T = unknown>(
   const [state, dispatch] = useReducer(fetchReducer, initialState);
 
   const fetchData = useCallback(async () => {
-    dispatch({ type: "loading" });
+    dispatch({ type: 'loading' });
 
     try {
       const response = await fetch(`${API_URL}${url}`, options);
@@ -60,14 +57,14 @@ function useFetch<T = unknown>(
       return data;
     } catch (error) {
       if (cancelRequest.current) return;
-      dispatch({ type: "error", payload: error as Error });
+      dispatch({ type: 'error', payload: error as Error });
     }
   }, [url, options, dispatch]);
 
   useEffect(() => {
     const fetchInitialData = async () => {
       const response = (await fetchData()) as T[];
-      dispatch({ type: "fetched", payload: response });
+      dispatch({ type: 'fetched', payload: response });
     };
     fetchInitialData();
     return () => {
@@ -77,7 +74,7 @@ function useFetch<T = unknown>(
 
   const fetchMore = useCallback(async () => {
     const response = (await fetchData()) as T[];
-    dispatch({ type: "fetched", payload: response });
+    dispatch({ type: 'fetched', payload: response });
   }, [fetchData, dispatch]);
 
   return { ...state, fetchMore };

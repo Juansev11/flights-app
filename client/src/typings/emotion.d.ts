@@ -2,6 +2,7 @@ import '@emotion/react';
 
 type ColorPalette = {
   main: string;
+  light?: string;
 };
 type ColorRange = {
   100: string;

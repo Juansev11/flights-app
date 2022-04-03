@@ -7,6 +7,7 @@ export const ContentLayoutContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   gap: 2rem;
+  max-height: 100%;
   @media only screen and (min-width: 30rem) {
     max-width: 64rem;
   }

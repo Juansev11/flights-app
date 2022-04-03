@@ -1,3 +1,6 @@
+import { formatCurrency, formatDateFromString } from '@/utils/format';
+
+import { Flight } from '../../types/Flight';
 import { FlightRoute } from '../FlightRoute/FlightRoute';
 
 import {
@@ -6,16 +9,22 @@ import {
   FlightPrice,
 } from './FlightListItem.styles';
 
-type FlightListItemProps = React.ComponentPropsWithoutRef<'article'>;
+type FlightListItemProps = {
+  flight: Flight;
+} & React.ComponentPropsWithoutRef<'article'>;
 
-export const FlightListItem: React.FC<FlightListItemProps> = () => {
+export const FlightListItem: React.FC<FlightListItemProps> = ({ flight }) => {
+  const departureDate = formatDateFromString(flight.departureDate);
+  const returnDate = formatDateFromString(flight.returnDate);
+  const price = formatCurrency(flight.price.amount);
+
   return (
     <FlightItemContainer>
-      <FlightRoute origin="BOG" date="Mar 25, 2022" destination="MAD" />
+      <FlightRoute origin={flight.origin} date={departureDate} destination={flight.destination} />
       <FlightItemContentSeparator />
-      <FlightRoute origin="MAD" date="Apr 25, 2022" destination="BOG" />
+      <FlightRoute origin={flight.destination} date={returnDate} destination={flight.origin} />
       <FlightPrice variant="md" weight="extraBold">
-        from € 29.99
+        from {price}
       </FlightPrice>
     </FlightItemContainer>
   );

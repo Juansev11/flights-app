@@ -6,5 +6,5 @@ export const Container = styled.div`
   align-items: flex-start;
   padding: 1rem;
   height: 100%;
-  background-color: #8ec5fc;
+  background-image: ${(props) => props.theme.palette.background.main};
 `;

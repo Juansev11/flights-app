@@ -7,7 +7,7 @@ const stampCircle = (props: any) => css`
   content: '';
   width: 1.25rem;
   height: 1.25rem;
-  background-color: #8ec5fc;
+  background-color: ${props.theme.palette.background.light};
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -31,6 +31,8 @@ export const FlightItemContainer = styled.article`
     ${stampCircle}
     right: -0.625rem;
   }
+  border: ${(props) => props.theme.border.basic};
+  box-shadow: ${(props) => props.theme.boxShadow.basic};
 `;
 
 export const FlightItemContentSeparator = styled.div`

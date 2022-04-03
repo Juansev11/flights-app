@@ -19,6 +19,7 @@ const palette = {
   },
   background: {
     main: 'linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%)',
+    light: '#dfefff',
   },
 };
 
