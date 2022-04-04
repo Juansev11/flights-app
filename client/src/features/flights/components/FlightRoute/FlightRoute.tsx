@@ -18,7 +18,7 @@ export const FlightRoute: React.FC<FlightRouteProps> = ({ origin, destination, d
   return (
     <FlightRouteContainer>
       <FlightStop>
-        <FlightCity variant="xl" weight="extraBold">
+        <FlightCity variant="lg" weight="extraBold">
           {origin}
         </FlightCity>
       </FlightStop>
@@ -31,7 +31,7 @@ export const FlightRoute: React.FC<FlightRouteProps> = ({ origin, destination, d
         </FlightRouteLine>
       </FlightRouteDuration>
       <FlightStop>
-        <FlightCity variant="xl" weight="extraBold">
+        <FlightCity variant="lg" weight="extraBold">
           {destination}
         </FlightCity>
       </FlightStop>

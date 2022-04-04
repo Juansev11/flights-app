@@ -17,15 +17,16 @@ export const InputWrapper = styled.div`
 `;
 
 export const Input = styled.input`
-  border: 1px solid ${(props) => props.theme.palette.primary.main};
+  border: 1px solid ${(props) => props.theme.palette.common.grey[200]};
   border-radius: ${(props) => props.theme.borderRadius.round};
-  background: none;
+  background: ${(props) => props.theme.palette.common.white};
   height: 2rem;
   width: 100%;
   padding-left: 0.5rem;
 `;
 
 export const InputLabel = styled.label`
-  color: ${(props) => props.theme.palette.common.grey[400]};
-  font-size: 0.875rem;
+  color: ${(props) => props.theme.palette.common.black};
+  font-size: 1rem;
+  font-weight: 700;
 `;

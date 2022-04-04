@@ -12,3 +12,9 @@ export type Flight = {
   };
   uuid: string;
 };
+
+export type FlightsSlice = {
+  origin: string;
+  destination: string;
+  setValueByKey: (key: string, city: string) => void;
+};

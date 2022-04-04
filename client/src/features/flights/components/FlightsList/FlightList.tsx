@@ -1,14 +1,39 @@
+import { useMemo } from 'react';
+
 import { Button, Text } from '@/components/Elements';
+import useDebounce from '@/hooks/useDebounce';
+import useStore, { StoreState } from '@/store/useStore';
+import { filterPlainArray } from '@/utils/filter';
 
 import { useGetFlights } from '../../api/getFlights';
+import { Flight } from '../../types/Flight';
 import { FlightListItem } from '../FlightsListItem/FlightListItem';
 
 import { FlightListCard, FlightListContainer } from './FlightList.style';
 
 type FlightListProps = React.ComponentPropsWithoutRef<'ul'>;
 
+const originSelector = (state: StoreState) => state.origin;
+const destinationSelector = (state: StoreState) => state.destination;
+
 export const FlightList: React.FC<FlightListProps> = () => {
   const { data, isLoading } = useGetFlights();
+  const origin = useStore(originSelector);
+  const destination = useStore(destinationSelector);
+
+  const debouncedOrigin = useDebounce(origin, 300);
+  const debouncedDestination = useDebounce(destination, 300);
+
+  const filteredFlights = useMemo(() => {
+    if (data) {
+      const filters = {
+        origin: debouncedOrigin ? [debouncedOrigin] : [],
+        destination: debouncedDestination ? [debouncedDestination] : [],
+      };
+      const flights = filterPlainArray<Flight>(data, filters);
+      return flights;
+    }
+  }, [data, debouncedOrigin, debouncedDestination]);
 
   if (isLoading) {
     return (
@@ -30,14 +55,22 @@ export const FlightList: React.FC<FlightListProps> = () => {
   }
 
   return (
-    <FlightListCard>
-      <FlightListContainer>
-        {data?.map((flight) => (
-          <li key={flight.uuid}>
-            <FlightListItem flight={flight} />
-          </li>
-        ))}
-      </FlightListContainer>
-    </FlightListCard>
+    <>
+      {filteredFlights?.length ? (
+        <FlightListCard>
+          <FlightListContainer>
+            {filteredFlights.map((flight) => (
+              <li key={flight.uuid}>
+                <FlightListItem flight={flight} />
+              </li>
+            ))}
+          </FlightListContainer>
+        </FlightListCard>
+      ) : (
+        <Text variant="lg" weight="bold">
+          No flights found for this combination of origin and destination
+        </Text>
+      )}
+    </>
   );
 };

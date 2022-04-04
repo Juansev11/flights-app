@@ -12,7 +12,7 @@ export const FlightListContainer = styled.ul`
 `;
 
 export const FlightListCard = styled(Card)`
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: ${(props) => props.theme.palette.background.light};
   box-shadow: rgb(0 0 0 / 5%) 0px 0px 6px 5px;
   overflow: auto;

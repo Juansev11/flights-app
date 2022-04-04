@@ -5,8 +5,8 @@ import { Plane } from '@/components/Icons/Plane';
 
 export const FlightRouteContainer = styled.section`
   flex: 1;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   align-items: center;
   margin-bottom: 1rem;
 `;
@@ -18,6 +18,7 @@ export const FlightRouteDuration = styled.div`
   flex-direction: column;
   align-items: center;
   align-self: stretch;
+  grid-column: span 4 / span 4;
 `;
 
 export const FlightRouteLine = styled.div`
@@ -33,6 +34,7 @@ export const FlightStop = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-column: span 2 / span 2;
 `;
 
 export const FlightCity = styled(Text)``;
