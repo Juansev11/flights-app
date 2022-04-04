@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { Text } from '@/components/Elements';
 
 const stampCircle = (props: any) => css`
-  content: '';
+  content: none;
   width: 1.25rem;
   height: 1.25rem;
   background-color: ${props.theme.palette.background.light};
@@ -12,6 +12,9 @@ const stampCircle = (props: any) => css`
   top: 50%;
   transform: translateY(-50%);
   border-radius: ${props.theme.borderRadius.circle};
+  @media only screen and (min-width: 30rem) {
+    content: '';
+  }
 `;
 
 export const FlightItemContainer = styled.article`

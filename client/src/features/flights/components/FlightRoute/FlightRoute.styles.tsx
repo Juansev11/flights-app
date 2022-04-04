@@ -26,7 +26,7 @@ export const FlightRouteLine = styled.div`
   height: 1px;
   background-color: ${(props) => props.theme.palette.common.grey[200]};
   opacity: 0.5;
-  width: calc(90% - 1rem);
+  width: 100%;
   margin: 0;
 `;
 

@@ -24,6 +24,10 @@ export const FlightList: React.FC<FlightListProps> = () => {
   const debouncedOrigin = useDebounce(origin, 300);
   const debouncedDestination = useDebounce(destination, 300);
 
+  /**
+   * Filters flight based on selections. The function filterPlainArray filters using array keys, so we need to set
+   * our keys origin and destination as single element arrays
+   */
   const filteredFlights = useMemo(() => {
     if (data) {
       const filters = {

@@ -1,7 +1,7 @@
 export const getValue = (value: any) => (typeof value === 'string' ? value.toUpperCase() : value);
 
 /**
- * Filters an array of objects (one level-depth) with multiple criteria.
+ * Filters an array of objects with multiple criteria.
  *
  * @param  array: the array to filter
  * @param  filters: an object with the filter criteria

@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 
+/**
+ * Hook for debouncing input values
+ */
 function useDebounce<T>(value: T, delay?: number): T {
   const [debouncedValue, setDebouncedValue] = useState<T>(value);
 

@@ -8,6 +8,9 @@ import { FlightFiltersContainer } from './FlightFilters.styles';
 
 type FlightsFiltersProps = React.ComponentPropsWithoutRef<'div'>;
 
+/**
+ * Selectors from store outside component for memoization
+ */
 const setValueByKeySelector = (state: StoreState) => state.setValueByKey;
 const originSelector = (state: StoreState) => state.origin;
 const destinationSelector = (state: StoreState) => state.destination;

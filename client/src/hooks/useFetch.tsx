@@ -6,7 +6,6 @@ interface FetchResponse<T> {
   data?: T[];
   error?: Error;
   isLoading?: boolean;
-  fetchMore: () => void;
 }
 
 type Action<T> =
@@ -21,7 +20,6 @@ function useFetch<T = unknown>(url = '', options?: RequestInit): FetchResponse<T
     error: undefined,
     data: undefined,
     isLoading: false,
-    fetchMore: () => {},
   };
 
   const fetchReducer = (
@@ -72,12 +70,7 @@ function useFetch<T = unknown>(url = '', options?: RequestInit): FetchResponse<T
     };
   }, [fetchData, dispatch]);
 
-  const fetchMore = useCallback(async () => {
-    const response = (await fetchData()) as T[];
-    dispatch({ type: 'fetched', payload: response });
-  }, [fetchData, dispatch]);
-
-  return { ...state, fetchMore };
+  return state;
 }
 
 export default useFetch;
