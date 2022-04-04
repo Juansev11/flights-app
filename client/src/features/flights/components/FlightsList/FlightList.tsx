@@ -63,9 +63,9 @@ export const FlightList: React.FC<FlightListProps> = () => {
       {filteredFlights?.length ? (
         <FlightListCard>
           <FlightListContainer>
-            {filteredFlights.map((flight) => (
+            {filteredFlights.map((flight, index) => (
               <li key={flight.uuid}>
-                <FlightListItem flight={flight} />
+                <FlightListItem flight={flight} index={index} />
               </li>
             ))}
           </FlightListContainer>

@@ -50,3 +50,14 @@ export const FlightItemContentSeparator = styled.div`
 export const FlightPrice = styled(Text)`
   color: ${(props) => props.theme.palette.primary.main};
 `;
+
+export const SrOnly = styled.div`
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+`;
